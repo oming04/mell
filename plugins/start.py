@@ -92,13 +92,10 @@ async def start_command(client: Client, message: Message):
                 [
                     InlineKeyboardButton("😊 Kepo Ya?", callback_data = "about"),
                     InlineKeyboardButton("🔒 Tutup", callback_data = "close")
-                ]
-            ],
-[
+                ],
                 [
                     InlineKeyboardButton("CHANNEL", url=f"https://t.me/hardbst")
                 ]
-            ]
         )
         await message.reply_text(
             text = START_MSG.format(
